@@ -7,12 +7,12 @@ export class MapContainer extends Component {
   
 	render() {
 
-	const pos = {lat: 37.759703, lng: -122.428093}
+	const position = {lat: 40.718378, lng: -73.955290}
 
     return (
     	<div>
       		<MapComponent google={this.props.google}>
-      			<MarkerComponent position={pos}/>
+      			<MarkerComponent position={position}/>
       		</MapComponent>
       	</div>
     )

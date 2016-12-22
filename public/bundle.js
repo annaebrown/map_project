@@ -21489,7 +21489,7 @@
 	
 	var _MapContainer2 = _interopRequireDefault(_MapContainer);
 	
-	var _Navbar = __webpack_require__(180);
+	var _Navbar = __webpack_require__(195);
 	
 	var _Navbar2 = _interopRequireDefault(_Navbar);
 	
@@ -21545,13 +21545,13 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _index = __webpack_require__(181);
+	var _index = __webpack_require__(180);
 	
-	var _Map = __webpack_require__(194);
+	var _Map = __webpack_require__(193);
 	
 	var _Map2 = _interopRequireDefault(_Map);
 	
-	var _Marker = __webpack_require__(195);
+	var _Marker = __webpack_require__(194);
 	
 	var _Marker2 = _interopRequireDefault(_Marker);
 	
@@ -21576,7 +21576,7 @@
 	    key: 'render',
 	    value: function render() {
 	
-	      var pos = { lat: 37.759703, lng: -122.428093 };
+	      var position = { lat: 40.718378, lng: -73.955290 };
 	
 	      return _react2.default.createElement(
 	        'div',
@@ -21584,7 +21584,7 @@
 	        _react2.default.createElement(
 	          _Map2.default,
 	          { google: this.props.google },
-	          _react2.default.createElement(_Marker2.default, { position: pos })
+	          _react2.default.createElement(_Marker2.default, { position: position })
 	        )
 	      );
 	    }
@@ -21601,53 +21601,9 @@
 /* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	exports.default = function (props) {
-	
-		return _react2.default.createElement(
-			"div",
-			{ className: "navbar navbar-inverse navbar-fixed-top", role: "navigation" },
-			_react2.default.createElement(
-				"h2",
-				{ className: "navbar-brand clearfix" },
-				_react2.default.createElement("span", { className: "glyphicon glyphicon-heart" }),
-				_react2.default.createElement(
-					"span",
-					null,
-					"The Story of Us"
-				),
-				_react2.default.createElement("span", { className: "glyphicon glyphicon-heart" })
-			),
-			_react2.default.createElement(
-				"p",
-				null,
-				_react2.default.createElement(
-					"span",
-					null,
-					"A map of our sweetest New York memories"
-				)
-			)
-		);
-	};
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/***/ },
-/* 181 */
-/***/ function(module, exports, __webpack_require__) {
-
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
 	  if (true) {
-	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(182), __webpack_require__(186), __webpack_require__(188), __webpack_require__(1), __webpack_require__(32), __webpack_require__(187), __webpack_require__(193), __webpack_require__(185)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(181), __webpack_require__(185), __webpack_require__(187), __webpack_require__(1), __webpack_require__(32), __webpack_require__(186), __webpack_require__(192), __webpack_require__(184)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	  } else if (typeof exports !== "undefined") {
 	    factory(exports, require('./GoogleApiComponent'), require('./components/Marker'), require('./components/InfoWindow'), require('react'), require('react-dom'), require('./lib/String'), require('./lib/cancelablePromise'), require('invariant'));
 	  } else {
@@ -22049,12 +22005,12 @@
 	});
 
 /***/ },
-/* 182 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
 	    if (true) {
-	        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(1), __webpack_require__(32), __webpack_require__(183), __webpack_require__(184)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(1), __webpack_require__(32), __webpack_require__(182), __webpack_require__(183)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	    } else if (typeof exports !== "undefined") {
 	        factory(exports, require('react'), require('react-dom'), require('./lib/ScriptCache'), require('./lib/GoogleApi'));
 	    } else {
@@ -22137,7 +22093,7 @@
 	        options = options || {};
 	        var apiKey = options.apiKey;
 	        var libraries = options.libraries || ['places'];
-	        var version = options.version || '3.24';
+	        var version = options.version || '3.25';
 	
 	        return (0, _ScriptCache.ScriptCache)({
 	            google: (0, _GoogleApi2.default)({ apiKey: apiKey, libraries: libraries, version: version })
@@ -22148,7 +22104,7 @@
 	        return function (WrappedComponent) {
 	            var apiKey = options.apiKey;
 	            var libraries = options.libraries || ['places'];
-	            var version = options.version || '3.24';
+	            var version = options.version || '3.25';
 	            var createCache = options.createCache || defaultCreateCache;
 	
 	            var Wrapper = function (_React$Component) {
@@ -22205,7 +22161,7 @@
 	});
 
 /***/ },
-/* 183 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
@@ -22353,12 +22309,12 @@
 	});
 
 /***/ },
-/* 184 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
 	    if (true) {
-	        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(185)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(184)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	    } else if (typeof exports !== "undefined") {
 	        factory(exports, require('invariant'));
 	    } else {
@@ -22434,7 +22390,7 @@
 	});
 
 /***/ },
-/* 185 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -22492,12 +22448,12 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 186 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
 	  if (true) {
-	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(1), __webpack_require__(187)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(1), __webpack_require__(186)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	  } else if (typeof exports !== "undefined") {
 	    factory(exports, require('react'), require('../lib/String'));
 	  } else {
@@ -22695,7 +22651,7 @@
 	});
 
 /***/ },
-/* 187 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
@@ -22724,12 +22680,12 @@
 	});
 
 /***/ },
-/* 188 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
 	  if (true) {
-	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(1), __webpack_require__(32), __webpack_require__(189)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(1), __webpack_require__(32), __webpack_require__(188)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	  } else if (typeof exports !== "undefined") {
 	    factory(exports, require('react'), require('react-dom'), require('react-dom/server'));
 	  } else {
@@ -22931,16 +22887,16 @@
 	});
 
 /***/ },
-/* 189 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	module.exports = __webpack_require__(190);
+	module.exports = __webpack_require__(189);
 
 
 /***/ },
-/* 190 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22956,7 +22912,7 @@
 	'use strict';
 	
 	var ReactDefaultInjection = __webpack_require__(38);
-	var ReactServerRendering = __webpack_require__(191);
+	var ReactServerRendering = __webpack_require__(190);
 	var ReactVersion = __webpack_require__(171);
 	
 	ReactDefaultInjection.inject();
@@ -22970,7 +22926,7 @@
 	module.exports = ReactDOMServer;
 
 /***/ },
-/* 191 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -22992,7 +22948,7 @@
 	var ReactInstrumentation = __webpack_require__(62);
 	var ReactMarkupChecksum = __webpack_require__(169);
 	var ReactReconciler = __webpack_require__(59);
-	var ReactServerBatchingStrategy = __webpack_require__(192);
+	var ReactServerBatchingStrategy = __webpack_require__(191);
 	var ReactServerRenderingTransaction = __webpack_require__(133);
 	var ReactUpdates = __webpack_require__(56);
 	
@@ -23065,7 +23021,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 192 */
+/* 191 */
 /***/ function(module, exports) {
 
 	/**
@@ -23091,7 +23047,7 @@
 	module.exports = ReactServerBatchingStrategy;
 
 /***/ },
-/* 193 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
@@ -23136,13 +23092,13 @@
 	});
 
 /***/ },
-/* 194 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-				value: true
+		value: true
 	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -23155,7 +23111,7 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _Marker = __webpack_require__(195);
+	var _Marker = __webpack_require__(194);
 	
 	var _Marker2 = _interopRequireDefault(_Marker);
 	
@@ -23170,85 +23126,111 @@
 	//import Map, {GoogleApiWrapper} from 'google-maps-react/dist/index';
 	
 	var MapComponent = function (_Component) {
-				_inherits(MapComponent, _Component);
+		_inherits(MapComponent, _Component);
 	
-				function MapComponent() {
-							_classCallCheck(this, MapComponent);
+		function MapComponent(props) {
+			_classCallCheck(this, MapComponent);
 	
-							return _possibleConstructorReturn(this, (MapComponent.__proto__ || Object.getPrototypeOf(MapComponent)).apply(this, arguments));
+			var _this = _possibleConstructorReturn(this, (MapComponent.__proto__ || Object.getPrototypeOf(MapComponent)).call(this, props));
+	
+			var lat = _this.props.initialCenter.lat;
+			var lng = _this.props.initialCenter.lng;
+	
+			_this.state = {
+				currentLocation: {
+					lat: lat,
+					lng: lng
 				}
+			};
+			return _this;
+		}
 	
-				_createClass(MapComponent, [{
-							key: 'componentDidUpdate',
-							value: function componentDidUpdate() {
-										this.loadMap();
-							}
-				}, {
-							key: 'loadMap',
-							value: function loadMap() {
-										if (this.props && this.props.google) {
-													// google is available
-													var google = this.props.google;
+		_createClass(MapComponent, [{
+			key: 'componentDidUpdate',
+			value: function componentDidUpdate() {
+				this.loadMap();
+			}
+		}, {
+			key: 'loadMap',
+			value: function loadMap() {
 	
-													var maps = google.maps;
+				if (this.props && this.props.google) {
+					// google is available
 	
-													var mapRef = this.refs.map;
-													var node = _reactDom2.default.findDOMNode(mapRef);
+					var maps = this.props.google.maps;
 	
-													var zoom = 12;
-													var lat = 40.718378;
-													var lng = -73.955290;
-													var center = new maps.LatLng(lat, lng);
-													var mapConfig = Object.assign({}, {
-																center: center,
-																zoom: zoom
-													});
-													this.map = new maps.Map(node, mapConfig);
-										}
-										// ...
-							}
-				}, {
-							key: 'renderChildren',
-							value: function renderChildren() {
-										var _this2 = this;
+					var mapRef = this.refs.map;
+					var node = _reactDom2.default.findDOMNode(mapRef);
 	
-										var children = this.props.children;
+					var zoom = this.props.zoom;
+					var lat = this.state.currentLocation.lat;
+					var lng = this.state.currentLocation.lng;
 	
+					var center = new maps.LatLng(lat, lng);
+					var mapConfig = Object.assign({}, {
+						center: center,
+						zoom: zoom
+					});
 	
-										if (!children) return;
+					this.map = new maps.Map(node, mapConfig);
+				}
+				// ...
+			}
+		}, {
+			key: 'renderChildren',
+			value: function renderChildren() {
+				var _this2 = this;
 	
-										return _react2.default.Children.map(children, function (c) {
-													return _react2.default.cloneElement(c, {
-																map: _this2.map,
-																google: _this2.props.google
-													});
-										});
-							}
-				}, {
-							key: 'render',
-							value: function render() {
+				if (!this.props.children) return;
 	
-										var style = {
-													width: '100vw',
-													height: '100vh'
-										};
+				return _react2.default.Children.map(this.props.children, function (child, i) {
+					return _react2.default.cloneElement(child, {
+						map: _this2.map,
+						google: _this2.props.google,
+						mapCenter: _this2.state.currentLocation
+					});
+				});
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+				var style = {
+					width: '100vw',
+					height: '100vh'
+				};
 	
-										return _react2.default.createElement(
-													'div',
-													{ ref: 'map', style: style },
-													'Loading map...',
-													this.renderChildren()
-										);
-							}
-				}]);
+				return _react2.default.createElement(
+					'div',
+					{ ref: 'map', style: style },
+					'Loading map...',
+					this.renderChildren()
+				);
+			}
+		}]);
 	
-				return MapComponent;
+		return MapComponent;
 	}(_react.Component);
 	
 	exports.default = MapComponent;
+	
+	
+	MapComponent.propTypes = {
+		google: _react2.default.PropTypes.object,
+		zoom: _react2.default.PropTypes.number,
+		initialCenter: _react2.default.PropTypes.object
+	};
+	
+	MapComponent.defaultProps = {
+		zoom: 12,
+		// New York, by default
+		initialCenter: {
+			lat: 40.718378,
+			lng: -73.955290
+		}
+	};
 
 /***/ },
-/* 195 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23283,22 +23265,24 @@
 		_createClass(MarkerComponent, [{
 			key: 'componentDidUpdate',
 			value: function componentDidUpdate() {
+	
 				this.renderMarker();
+				console.log(this.marker);
 			}
 		}, {
 			key: 'renderMarker',
 			value: function renderMarker() {
-				var _props = this.props,
-				    map = _props.map,
-				    google = _props.google,
-				    position = _props.position;
 	
+				var map = this.props.map;
+				var mapCenter = this.props.mapCenter;
+				var google = this.props.google;
+				var position = this.props.position || mapCenter;
 	
 				position = new google.maps.LatLng(position.lat, position.lng);
 	
 				var pref = {
-					position: position,
-					map: map
+					map: map,
+					position: position
 				};
 	
 				this.marker = new google.maps.Marker(pref);
@@ -23306,7 +23290,6 @@
 		}, {
 			key: 'render',
 			value: function render() {
-	
 				return null;
 			}
 		}]);
@@ -23318,9 +23301,57 @@
 	
 	
 	MarkerComponent.propTypes = {
-		position: _react2.default.PropTypes.object,
-		map: _react2.default.PropTypes.object
+		map: _react2.default.PropTypes.object,
+		position: _react2.default.PropTypes.object
 	};
+	
+	MarkerComponent.defaultProps = {
+		name: 'Marker'
+	};
+
+/***/ },
+/* 195 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	exports.default = function (props) {
+	
+		return _react2.default.createElement(
+			"div",
+			{ className: "navbar navbar-inverse navbar-fixed-top", role: "navigation" },
+			_react2.default.createElement(
+				"h2",
+				{ className: "navbar-brand clearfix" },
+				_react2.default.createElement("span", { className: "glyphicon glyphicon-heart" }),
+				_react2.default.createElement(
+					"span",
+					null,
+					"The Story of Us"
+				),
+				_react2.default.createElement("span", { className: "glyphicon glyphicon-heart" })
+			),
+			_react2.default.createElement(
+				"p",
+				null,
+				_react2.default.createElement(
+					"span",
+					null,
+					"A map of our sweetest New York memories"
+				)
+			)
+		);
+	};
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }
 /******/ ]);
