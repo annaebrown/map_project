@@ -31,6 +31,19 @@ export default class MapComponent extends Component {
     // ...
   	}
 
+  	renderChildren() {
+	    const {children} = this.props;
+
+	    if (!children) return;
+
+	    return React.Children.map(children, c => {
+	      return React.cloneElement(c, {
+	        map: this.map,
+	        google: this.props.google
+	      });
+    })
+  }
+
 	render() {
 
 	const style = {
@@ -38,19 +51,14 @@ export default class MapComponent extends Component {
 		height: '100vh'
     }
 
-    const pos = {lat: 40.718378, lng: -73.955290}
 
 	 return (
 	      <div ref='map' style = {style}>
 	        Loading map...
-	        <MarkerComponent position={pos} map={this.map} google={this.props.google}/>
+	        {this.renderChildren()}
 	      </div>
     )
 	}
-}
-
-MapComponent.propTypes = {
-  google: React.PropTypes.object
 }
 
 

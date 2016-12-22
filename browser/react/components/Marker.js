@@ -12,8 +12,7 @@ export default class MarkerComponent extends Component {
 			map, google, position
 		} = this.props;
 
-		let pos = position;
-		position = new google.maps.LatLng(pos.lat, pos.lng);
+		position = new google.maps.LatLng(position.lat, position.lng);
 
 		const pref = {
 			position: position,
