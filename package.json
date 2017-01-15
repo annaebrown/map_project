@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack -w & nodemon ./server/index.js",
-    "build-css": "node-sass -w -r assets/stylesheets/main.scss -o public/stylesheets"
+    "build": "webpack"
   },
   "author": "Anna Brown",
   "license": "ISC",
