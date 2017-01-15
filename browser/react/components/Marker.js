@@ -5,7 +5,6 @@ export default class MarkerComponent extends Component {
   componentDidUpdate() {
 
         this.renderMarker();
-        console.log(this.marker)
   	 }
   
 

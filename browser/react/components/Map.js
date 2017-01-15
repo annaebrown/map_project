@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import MarkerComponent from '../components/Marker'
+// import MarkerComponent from '../components/Marker'
 //import Map, {GoogleApiWrapper} from 'google-maps-react/dist/index';
 
 export default class MapComponent extends Component {
@@ -26,7 +26,7 @@ export default class MapComponent extends Component {
     loadMap() {
 
 	    if (this.props && this.props.google) {
-	      // google is available
+	      // checks if google api is available
 	      
 	      const maps = this.props.google.maps;
 
@@ -62,6 +62,9 @@ export default class MapComponent extends Component {
   }
 
 	render() {
+
+	const position = {lat: 40.718378, lng: -73.955290}
+
 	const style = {
 		width: '100vw',
 		height: '100vh'

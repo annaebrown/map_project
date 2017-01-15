@@ -3,12 +3,13 @@ var path = require('path');
 var express = require('express');
 var app = express();
 const bodyParser = require('body-parser');
+
 module.exports = app;
 
-app.use('/', express.static(path.join(__dirname, './public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('/', (req, res, next) => {
-	res.json('Hello')
+	res.sendFile(path.resolve(__dirname, '../browser/index.html'))
 })
 
 app.use ((err, req, res, next) => {
